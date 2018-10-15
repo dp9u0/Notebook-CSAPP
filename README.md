@@ -1,6 +1,6 @@
-# Notebook-ICS
+# Notebook-CSAPP
 
-Introduce To Computer System
+计算机系统
 
 ## [从hello world讲起](ch1/README.md)
 
