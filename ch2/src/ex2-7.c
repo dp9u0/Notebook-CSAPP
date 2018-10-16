@@ -3,7 +3,13 @@
 
 typedef unsigned char *byte_pointer;
 
-extern void show_bytes(byte_pointer start, int len);
+void show_bytes(byte_pointer start, int len)
+{
+    int i;
+    for (i = 0; i < len; i++)
+        printf(" %.2x", start[i]); //line:data:show_bytes_printf
+    printf("\n");
+}
 
 int main(void)
 {

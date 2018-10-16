@@ -1,3 +1,7 @@
+/*
+增加  show_short show_long show_double
+*/
+
 /* $begin show-bytes */
 #include <stdio.h>
 /* $end show-bytes */
@@ -29,6 +33,22 @@ void show_pointer(void *x)
 {
     show_bytes((byte_pointer)&x, sizeof(void *)); //line:data:show_bytes_amp3
 }
+
+void show_short(short x)
+{
+    show_bytes((byte_pointer)&x, sizeof(short));
+}
+
+void show_long(long x)
+{
+    show_bytes((byte_pointer)&x, sizeof(long));
+}
+
+void show_double(double x)
+{
+    show_bytes((byte_pointer)&x, sizeof(double));
+}
+
 /* $end show-bytes */
 
 /* $begin test-show-bytes */
@@ -37,9 +57,23 @@ void test_show_bytes(int val)
     int ival = val;
     float fval = (float)ival;
     int *pval = &ival;
+    printf("calling show_int\n");
     show_int(ival);
+    printf("calling show_float\n");
     show_float(fval);
+    printf("calling show_pointer\n");
     show_pointer(pval);
+
+    short sval = (short)ival;
+    long lval = (long)ival;
+    double dval = (double)ival;
+
+    printf("calling show_short\n");
+    show_short(sval);
+    printf("calling show_long\n");
+    show_long(lval);
+    printf("calling show_double\n");
+    show_double(dval);
 }
 /* $end test-show-bytes */
 
