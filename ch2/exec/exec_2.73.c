@@ -9,7 +9,7 @@
  *
  * Addition that saturates to TMin or TMax
  *
- * 与正常的补码溢出的方式不同，
+ * 通正常的补码溢出的方式不同，
  * 正溢出时，返回 TMax，
  * 负溢出时，返回 TMin。
  * 这种运算常常用在执行数字信号处理的程序中。
