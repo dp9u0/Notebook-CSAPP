@@ -18,30 +18,30 @@
 
 int A(int x)
 {
-        return x;
+        return (x << 2) + x;
 }
 
 int B(int x)
 {
-        return x;
+        return (x << 3) + x;
 }
 
 int C(int x)
 {
-        return x;
+        return (x << 5) - (x << 1);
 }
 
 int D(int x)
 {
-        return x;
+        return (x << 3) - (x << 6);
 }
 
 int main(int argc, char *argv[])
 {
         int x = 0x87654321;
-        printf("%x\n", A(x) == 6 * x);
-        printf("%x\n", B(x) == 9 * x);
-        printf("%x\n", C(x) == 20 * x);
-        printf("%x\n", D(x) == -56 * x);
+        printf("%x == %x\n", A(x), 5 * x);
+        printf("%x == %x\n", B(x), 9 * x);
+        printf("%x == %x\n", C(x), 30 * x);
+        printf("%x == %x\n", D(x), -56 * x);
         return 0;
 }

@@ -1,8 +1,13 @@
 #include <stdio.h>
-#include <assert.h>
-#include <string.h>
-#include <stdlib.h>
 #include <limits.h>
+
+int divide_power2(int x, int k)
+{
+    int bias = 0;
+    int sign = (x & INT_MIN) == INT_MIN;
+    (sign && (bias = (1 << k) - 1));
+    return (x + bias) >> k;
+}
 
 /*
  * 2.78
@@ -14,14 +19,15 @@
 
 int mul5div8(int x)
 {
+    return divide_power2((x << 2) + x, 3);
 }
 
 int main(int argc, char *argv[])
 {
-        int x = 0x87654321;
-        printf("%x\n", mul5div8(x) == x * 5 / 8);
+    int x = 0x87654321;
+    printf("%x\n", mul5div8(x) == x * 5 / 8);
 
-        x = 0x12345678;
-        printf("%x\n", mul5div8(x) == x * 5 / 8);
-        return 0;
+    x = 0x12345678;
+    printf("%x\n", mul5div8(x) == x * 5 / 8);
+    return 0;
 }

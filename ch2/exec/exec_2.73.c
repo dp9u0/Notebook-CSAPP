@@ -9,7 +9,7 @@
  *
  * Addition that saturates to TMin or TMax
  *
- * 通正常的补码溢出的方式不同，
+ * 与正常的补码溢出的方式不同，
  * 正溢出时，返回 TMax，
  * 负溢出时，返回 TMin。
  * 这种运算常常用在执行数字信号处理的程序中。
@@ -19,7 +19,11 @@
 
 int saturating_add(int x, int y)
 {
-    return x + y;
+    int sum = x + y;
+    int pos_overflow = !(x & INT_MIN) && !(y & INT_MIN) && (sum & INT_MIN);
+    int neg_overflow = (x & INT_MIN) && (y & INT_MIN) && !(sum & INT_MIN);
+    (pos_overflow && (sum = INT_MAX) || neg_overflow && (sum = INT_MIN));
+    return sum;
 }
 
 int main(int argc, char *argv[])

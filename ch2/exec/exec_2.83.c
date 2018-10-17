@@ -24,21 +24,47 @@
  *      }
  */
 
-int float_ge(float x, float y)
+unsigned f2u(float f)
 {
+    union {
+        float f;
+        unsigned u;
+    } a;
+    a.f = f;
+    return a.u;
 }
 
-/* ftp://202.120.40.101/Courses/Computer_Architecture/csapp.cs.cmu.edu/im/code/data/floatge-ans.c */
-int float_ge_ans(float x, float y)
+float u2f(unsigned x)
 {
+    union {
+        unsigned u;
+        float f;
+    } a;
+    a.u = x;
+    return a.f;
+}
+
+int float_ge(float x, float y)
+{
+    unsigned ux = f2u(x);
+    unsigned uy = f2u(y);
+
+    /* Get the sign bits */
+    unsigned sx = ux >> 31;
+    unsigned sy = uy >> 31;
+
+    return (ux << 1 == 0 && uy << 1 == 0) || /* -0 && +0 : ux = uy = 0 */
+           (!sx && sy) ||                    /* x >= 0, y < 0 */
+           (!sx && !sy && ux >= uy) ||       /* x >= 0, y >= 0 */
+           (sx && sy && ux <= uy);           /* x < 0, y < 0 */
 }
 
 int main(int argc, char *argv[])
 {
-        printf("%x\n", float_ge(-0, +0));
-        printf("%x\n", float_ge(+0, -0));
-        printf("%x\n", float_ge(0, 3));
-        printf("%x\n", float_ge(-4, -0));
-        printf("%x\n", float_ge(-4, 4));
-        return 0;
+    printf("%x\n", float_ge(-0, +0));
+    printf("%x\n", float_ge(+0, -0));
+    printf("%x\n", float_ge(0, 3));
+    printf("%x\n", float_ge(-4, -0));
+    printf("%x\n", float_ge(-4, 4));
+    return 0;
 }
