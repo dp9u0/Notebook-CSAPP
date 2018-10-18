@@ -1,4 +1,4 @@
-# Notebook-CSAPP
+# Notebook*CSAPP
 
 计算机系统
 
@@ -21,6 +21,20 @@
 * [字符编码](ch2/2.5.md)
   
 ## [程序的表示](ch3/README.md)
+
+* 程序编码
+* 数据格式
+* 存取指令
+* 运算指令
+* 条件控制指令
+* 过程调用
+* 数组
+* structure union
+* 指针
+* GDB
+* 存储器越界引用和缓冲器溢出
+* IA32 to x64
+* 浮点数
 
 ## [处理器体系结构](ch4/README.md)
 
