@@ -19,7 +19,7 @@
 * [字符编码](ch2/2.5.md)
 
 * Reference
-  *[Unicode 11.0 Character Code Charts](https://www.unicode.org/charts/)
+  * [Unicode 11.0 Character Code Charts](https://www.unicode.org/charts/)
 
 ## [程序的表示](ch3/README.md)
 
