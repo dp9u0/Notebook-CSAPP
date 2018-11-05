@@ -17,12 +17,10 @@
 * [整数运算](ch2/2.3.md)
 * [浮点数](ch2/2.4.md)
 * [字符编码](ch2/2.5.md)
-
 * Tips
   * [一个关于dotfuscator_v5.9字符编码的Bug](https://github.com/dp9u0/Notebook-CSAPP/issues/6)
   * [两个数不使用四则运算得出和(位运算)](https://github.com/dp9u0/Notebook-CSAPP/issues/5)
   * [Unicode 编码分布](https://github.com/dp9u0/Notebook-CSAPP/issues/3)
-
 * Reference
   * [Unicode 11.0 Character Code Charts](https://www.unicode.org/charts/)
 
@@ -38,7 +36,6 @@
 * [数据结构](ch3/3.08.md)
 * [指针与溢出](ch3/3.09.md)
 * [浮点数](ch3/3.10.md)
-
 * Reference
   * [Stack allocation, padding, and alignment](https://stackoverflow.com/questions/1061818/stack-allocation-padding-and-alignment)
   * [Difference between movq and movabsq in x86-64](https://stackoverflow.com/questions/40315803/difference-between-movq-and-movabsq-in-x86-64)
@@ -51,7 +48,6 @@
 * [存储器技术](ch6/6.1.md)
 * [存储器层次](ch6/6.2.md)
 * [高速缓存](ch6/6.3.md)
-
 * Reference
   * [每个程序员都应该了解的内存知识](http://blog.jobbole.com/34303/)
   * [每个程序员都应该了解的CPU高速缓存](http://blog.jobbole.com/36263/)
