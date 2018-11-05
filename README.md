@@ -20,8 +20,8 @@
 
 * Tips
   * [一个关于dotfuscator_v5.9字符编码的Bug](https://github.com/dp9u0/Notebook-CSAPP/issues/6)
-  * [两个数不使用四则运算得出和(位运算)](https://github.com/dp9u0/Notebook-CSAPP/issues/3)
-  * [Unicode 编码分布](https://github.com/dp9u0/Notebook-CSAPP/issues/5)
+  * [两个数不使用四则运算得出和(位运算)](https://github.com/dp9u0/Notebook-CSAPP/issues/5)
+  * [Unicode 编码分布](https://github.com/dp9u0/Notebook-CSAPP/issues/3)
 
 * Reference
   * [Unicode 11.0 Character Code Charts](https://www.unicode.org/charts/)
