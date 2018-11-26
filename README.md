@@ -75,6 +75,10 @@
 
 ## [虚拟存储器](ch9/README.md)
 
+* [虚拟内存](ch9/9.1.md)
+* [地址翻译](ch9/9.2.md)
+* [内存映射与分配](ch9/9.3.md)
+* [虚拟内存相关的其他知识](ch9/9.4.md) : 垃圾回收与内存错误
 * Reference
   * [每个程序员都应该了解的“虚拟内存”知识](http://blog.jobbole.com/36303/)
   * [Linux虚拟内存空间分布](https://blog.csdn.net/wyq_5/article/details/77481136)
