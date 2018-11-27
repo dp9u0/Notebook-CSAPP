@@ -90,13 +90,3 @@
   * [Linux虚拟地址空间布局以及进程栈和线程栈总结](https://www.cnblogs.com/xzzzh/p/6596982.html)
   * [64位Windows内核虚拟地址空间布局](http://blog.51cto.com/shayi1983/1734822)
   * [Kernel Virtual Address Layout](http://www.codemachine.com/article_x64kvas.html)
-
-## [I/O](ch10/README.md)
-
-## [网络](ch11/README.md)
-
-## [并发](ch12/README.md)
-
-* Reference
-  * [线程同步常用方式与区别](https://blog.csdn.net/drdairen/article/details/73480570)
-  * [锁的种类与特点](https://blog.csdn.net/drdairen/article/details/73554843)
