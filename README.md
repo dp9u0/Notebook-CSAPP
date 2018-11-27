@@ -49,13 +49,6 @@
 * [流水线](ch4/./4.4.md) : 流水线设计
 * [Y86-64 流水线](ch4/./4.5.md) : Y86-64 CPU 流水线设计
 
-## [优化程序性能](ch5/README.md)
-
-* [高效的循环](ch5/README.md#消除循环的低效率)
-* [减少内存引用](ch5/README.md#减少不必要的内存引用)
-* [循环展开](ch5/README.md#循环展开)
-* [提高并行](ch5/README.md#提高并行)
-
 ## [存储器层次结构](ch6/README.md)
 
 * [存储器技术](ch6/6.1.md)
@@ -66,17 +59,6 @@
   * [每个程序员都应该了解的CPU高速缓存](http://blog.jobbole.com/36263/)
   * [Memory part 1](https://lwn.net/Articles/250967/)
   * [Memory part 2: CPU caches](https://lwn.net/Articles/252125/)
-
-## [链接](ch7/README.md)
-
-* [静态链接](ch7/7.1.md) : 介绍ELF头,如何将目标文件重定向为一个可执行目标文件
-* [动态链接共享库](ch7/7.2.md) : 介绍运行时链接机制
-
-## [异常控制流](ch8/README.md)
-
-* [异常分类](ch8/README.md#异常分类)
-* [进程](ch8/README.md#进程)
-* [信号](ch8/README.md#信号)
 
 ## [虚拟存储器](ch9/README.md)
 
@@ -90,3 +72,21 @@
   * [Linux虚拟地址空间布局以及进程栈和线程栈总结](https://www.cnblogs.com/xzzzh/p/6596982.html)
   * [64位Windows内核虚拟地址空间布局](http://blog.51cto.com/shayi1983/1734822)
   * [Kernel Virtual Address Layout](http://www.codemachine.com/article_x64kvas.html)
+
+## [优化程序性能](ch5/README.md)
+
+* [高效的循环](ch5/README.md#消除循环的低效率)
+* [减少内存引用](ch5/README.md#减少不必要的内存引用)
+* [循环展开](ch5/README.md#循环展开)
+* [提高并行](ch5/README.md#提高并行)
+
+## [链接](ch7/README.md)
+
+* [静态链接](ch7/7.1.md) : 介绍ELF头,如何将目标文件重定向为一个可执行目标文件
+* [动态链接共享库](ch7/7.2.md) : 介绍运行时链接机制
+
+## [异常控制流](ch8/README.md)
+
+* [异常分类](ch8/README.md#异常分类)
+* [进程](ch8/README.md#进程)
+* [信号](ch8/README.md#信号)
