@@ -51,6 +51,11 @@
 
 ## [优化程序性能](ch5/README.md)
 
+* [高效的循环](ch5/README.md#消除循环的低效率)
+* [减少内存引用](ch5/README.md#减少不必要的内存引用)
+* [循环展开](ch5/README.md#循环展开)
+* [提高并行](ch5/README.md#提高并行)
+
 ## [存储器层次结构](ch6/README.md)
 
 * [存储器技术](ch6/6.1.md)
