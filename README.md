@@ -1,6 +1,6 @@
 # 计算机系统
 
-[Notebook系列](./https://github.com/dp9u0/Notebook)
+[Notebook系列](https://github.com/dp9u0/Notebook)
 
 ## [从HelloWorld讲起](ch1/README.md)
 
